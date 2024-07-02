@@ -1,0 +1,152 @@
+ @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
+
+
+
+
+
+/* style.css */
+
+
+/* General styles */
+body {
+  background-color: #07000d;
+  background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
+  color: white;
+  font-family: 'Rubik', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  font-size: 3rem;
+  padding: 3rem 0 1rem;
+}
+
+.form {
+  display: flex;
+  gap: 0.5rem;
+  width: 80%;
+  margin: 1rem auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.form__input, .search__input {
+  flex: 1;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.25rem;
+  border: none;
+  outline: none;
+  margin-bottom: 0.5rem;
+}
+
+.form__button {
+  border: none;
+  background-color: rgba(113, 0, 212, 0.7);
+  cursor: pointer;
+  color: white;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  transition: all 0.2s;
+}
+
+.form__button:hover {
+  background-color: rgba(95, 0, 179, 0.5);
+}
+
+.search-container {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.search__input {
+  width: 30%;
+  padding: 0.5rem 0.4rem ;
+  border-radius: 0.25rem;
+  border: none;
+  outline: none;
+  color: #07000d; /* Text color for dark background */
+  background-color: white; /* Background color for search input */
+}
+
+.users {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.user {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  padding: 1rem 1.25rem;
+  width: 300px;
+  transition: all 0.2s;
+}
+
+.user:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.user__delete {
+  width: 80px; 
+  border: none;
+  background-color: #f7354c;
+  cursor: pointer;
+  color: white;
+  border-radius: 0.25rem;
+  transition: all 0.2s;
+  padding: 0.5rem;
+  margin-top: 0.5rem; 
+  justify-content: center;
+  align-items: center;/* Add margin on top of button */
+}
+
+.user__delete:hover {
+  transform: scale(1.15);
+  background-color: #f55466;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+}
+
+.welcome-message {
+  text-align: center;
+  margin: 1rem;
+  color: #fff;
+  font-size: 1.1rem;
+}
+.welcome-message-2 {
+  text-align: center;
+  margin: 1rem;
+  color: #fff;
+  font-size: 2rem;
+}
+.hashtag{
+  color: #fff;
+  padding-bottom: 20px;
+  
+  font-size: 1rem;
+  display: flex;
+  
+  width: 100%;
+  
+  justify-content: center;
+  
+}
+@media (max-width: 420px) {
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .form, .search__input {
+    width: 95%;
+  }
+}
