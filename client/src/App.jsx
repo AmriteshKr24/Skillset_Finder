@@ -270,7 +270,7 @@ export default function App() {
         )}
       </div>
       <div className="hashtag">
-        <p>Made with ❤ by Amritesh Kumar </p>
+        <p>Developed by Amritesh Kumar </p>
       </div>
     </main>
   );
