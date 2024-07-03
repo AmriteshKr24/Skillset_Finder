@@ -141,6 +141,51 @@ body {
   justify-content: center;
   
 }
+/* style.css */
+
+/* PIN input styles */
+.user__pin-input {
+  flex: 1;
+  padding: 0.5rem 0.5rem;
+  border-radius: 0.25rem;
+  border: none;
+  outline: none;
+  margin-bottom: 0.5rem;
+  margin-right: 10px;
+}
+
+/* Delete button and PIN container */
+.user__delete-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.user__delete-button {
+  width: 100%;
+  border: none;
+  background-color: #f7354c;
+  cursor: pointer;
+  color: white;
+  border-radius: 0.25rem;
+  transition: all 0.2s;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.user__delete-button:hover {
+  transform: scale(1.15);
+  background-color: #f55466;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 420px) {
+  .user__pin-input {
+    width: 95%;
+  }
+}
+
 @media (max-width: 420px) {
   .title {
     font-size: 2.5rem;
